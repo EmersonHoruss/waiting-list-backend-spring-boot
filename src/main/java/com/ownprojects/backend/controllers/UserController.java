@@ -1,0 +1,16 @@
+package com.ownprojects.backend.controllers;
+
+import com.ownprojects.backend.DTOs.entities.user.UserCreateDTO;
+import com.ownprojects.backend.DTOs.entities.user.UserShowDTO;
+import com.ownprojects.backend.DTOs.entities.user.UserUpdateDTO;
+import com.ownprojects.backend.constants.Endpoints;
+import com.ownprojects.backend.entities.User;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@CrossOrigin(origins = "*")
+@RequestMapping(path = Endpoints.USERS)
+public class UserController extends BaseController<User, UserCreateDTO, UserShowDTO, UserUpdateDTO>{
+}
